@@ -6,7 +6,7 @@ module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   networks: {
     development: {
-       host: "192.168.229.187",
+       host: "192.168.0.101",
        port: 7545,            // Standard Ethereum port (default: none)
        network_id: "*",       // Any network (default: none)
       }

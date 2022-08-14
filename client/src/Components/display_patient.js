@@ -117,7 +117,7 @@ class DisplayPatient extends Component {
     componentWillMount() {
         
         if(this.props.patient_address)
-            this.loadFiles(this.props.patient_address);
+            this.loadFiles(this.props.patient_PublicID);
             this.loadDoctorConsultation(this.props.patient_address);
             //uncomment after uncommenting from smart contract and after successful migration
             this.loadDoctorAddedFiles(this.props.patient_address)

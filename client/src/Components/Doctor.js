@@ -66,7 +66,7 @@ class Doctor extends Component {
                     </div>
 
                 </div>
-                <h2 className="text-center">Patients List </h2>
+                <h2 className="text-center">Appointments </h2>
                     <div className="flex flex-wrap items-center justify-center lg:w-full sm:mx-auto sm:mb-2 -mx-2">
                         <div className="flex flex-column p-2 sm:w-1/2 w-full flex items-center justify-center">
                             {

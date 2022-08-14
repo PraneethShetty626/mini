@@ -176,7 +176,7 @@ class Patient extends Component {
 
     async uploadFile(event) {
         event.preventDefault();
-
+        console.log("Files adding");
         ipfs.files.add(this.state.buffer, (err, res) => {
             if (err) {
                 console.error(err)
@@ -367,10 +367,10 @@ class Patient extends Component {
                         <h4 style={{ align: 'centre' }}>Register To Insurance Comp.</h4>
                         <div>
                             <form onSubmit={this.addPatientToInsuranceComp}>
-                                <div className='label mt-2'>Patient Address:</div>
-                                <input type="text" id="added_patient" value={this.accounts[0]} placeholder='Patient address' disabled></input>
+                                <div className='label mt-2'>Patient ID:</div>
+                                <input type="text" id="added_patient" value={this.accounts[0]} placeholder='Patient ID' disabled></input>
                                 <br></br>
-                                <div className='label mt-2'>Company Address:</div>
+                                <div className='label mt-2'>Company ID:</div>
                                 <input type="text" id="added_to_company" placeholder='Company Address'></input>
                                 <br></br>
                                 <button variant="dark" className="button" type="submit">Add</button>

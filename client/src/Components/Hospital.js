@@ -94,11 +94,11 @@ class Hospital extends Component {
                                 <form onSubmit={this.grantAccess}>
                                     <br></br>
                                     <div className="label mt-2"><b>Grant access to:</b></div>
-                                    <input className="rounded-2xl bg-white ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-50" type="text" name="Grant to" id="access_requestor" placeholder='Doctor address'></input>
+                                    <input className="rounded-2xl bg-white ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-50" type="text" name="Grant to" id="access_requestor" placeholder='Doctor ID'></input>
                                     <br></br>
                                     <br></br>
                                     <div className="label mt-2"><b>Access of: </b></div>
-                                    <input className="rounded-2xl bg-white ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-50 " type="text" name="Access of" id="access_of" placeholder="Patient Address" ></input>
+                                    <input className="rounded-2xl bg-white ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-50 " type="text" name="Access of" id="access_of" placeholder="Patient ID" ></input>
                                     <br></br>
                                     <br></br>
                                     <button variant="dark" className="p-2 text-black rounded-xl bg-blue-700  text-white active:bg-green-700 m-4 " type="submit">Grant Access</button>
@@ -112,11 +112,11 @@ class Hospital extends Component {
                             <h5 style={{ align: 'centre' }}><b>Add Patient To Insurance Comp.</b></h5>
                             <div>
                                 <form onSubmit={this.addPatientToInsuranceComp}>
-                                    <div className='label mt-2'>Patient Address:</div>
-                                    <input type="text" className="rounded-2xl" id="added_patient" placeholder='Patient address'></input>
+                                    <div className='label mt-2'>Patient ID:</div>
+                                    <input type="text" className="rounded-2xl" id="added_patient" placeholder='Patient ID'></input>
                                     <br></br> <br></br>
-                                    <div className='label mt-2'>Company Address:</div>
-                                    <input className="rounded-2xl" type="text" id="added_to_company" placeholder='Company Address'></input>
+                                    <div className='label mt-2'>Company ID:</div>
+                                    <input className="rounded-2xl" type="text" id="added_to_company" placeholder='Company ID'></input>
                                     <br></br>
                                     <button variant="dark" className="p-2 text-black rounded-xl bg-blue-700  text-white active:bg-green-700 m-4 " type="submit">Add Patient</button>
                                 </form>
@@ -126,7 +126,7 @@ class Hospital extends Component {
                     <br></br>
                     <div className='row mt-3' style={{ border: '2px black solid', borderRadius: "20px", marginTop: "20px", padding: "20px" }}>
                         <div className='col mt-3 bg-[#FDA4AF] pt-2 rounded-[30px]'>
-                            <h5 style={{ align: 'centre' }}><b>Add Doctor To Blockchain</b></h5>
+                            <h5 style={{ align: 'centre' }}><b>Recruit Doctor</b></h5>
 
                             <div style={{ marginLeft: '20px' }}>
                                 <form onSubmit={this.registerDoc}>
@@ -134,8 +134,8 @@ class Hospital extends Component {
                                     <input className="rounded-2xl" type="text" name="name" id="doc_name" placeholder="Name"></input>
                                     <br></br>
                                     <br></br>
-                                    <div className="label mt-2"><b>Blockchain Address:</b></div>
-                                    <input className="rounded-2xl" type="text" name="name" id="doc_id" placeholder="Address"></input>
+                                    <div className="label mt-2"><b>Public Key:</b></div>
+                                    <input className="rounded-2xl" type="text" name="name" id="doc_id" placeholder="Public ID"></input>
                                     <br></br>
                                     <br></br>
                                     <div className="label mt-2"><b>Contact Info:</b></div>

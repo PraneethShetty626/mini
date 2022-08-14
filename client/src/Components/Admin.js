@@ -110,7 +110,7 @@ class Admin extends Component {
                 <div>
                   <form onSubmit={this.registerHospital}>
                     <div className="label mt-2  ">
-                      <b>Blockchain Address:</b>
+                      <b>Public ID:</b>
                     </div>
                     <input
                       className="py-1 px-1 rounded-full w-full"
@@ -189,7 +189,7 @@ class Admin extends Component {
                       placeholder="Name"
                     ></input>
                     <br></br>
-                    <div className="label mt-2">Blockchain Address:</div>
+                    <div className="label mt-2">Public ID:</div>
                     <input
                       type="text"
                       className="py-1 px-1 rounded-full w-full"
@@ -202,7 +202,7 @@ class Admin extends Component {
                       type="text"
                       className="py-1 px-1 rounded-full w-full"
                       id="complicense"
-                      placeholder="License"
+                      placeholder="License Number"
                     ></input>
                     <br></br>
                     <br />
@@ -210,7 +210,7 @@ class Admin extends Component {
                       className="py-2 px-4  text-pink-100 transition-colors duration-150 bg-pink-600 rounded-full hover:bg-blue-700"
                       type="submit"
                     >
-                      Create Company
+                     Add 
                     </button>
                   </form>
                 </div>
@@ -219,7 +219,7 @@ class Admin extends Component {
           </center>
         </div>
         <center>
-          <div className="mt-5 text-bold " className="patient-doctor">
+          <div className="mt-5 text-bold ">
             <div className="col pt-4 w-full rounded-md bg-violet-300 pb-4">
               <h4>Add User by Adhaar</h4>
               <div>
@@ -229,19 +229,19 @@ class Admin extends Component {
                     id="adhaar_user_type"
                     name="adhaar_user_type"
                   >
-                    <option
+                     <option
                       className="p-2 text-white rounded-md"
                       value="patient"
-                    >
+                     >
                       Patient
-                    </option>
-                    <br></br>
-                    <option
+                     </option>
+                     <br></br>
+                     <option
                       className="p-2 text-white rounded-md"
                       value="doctor"
-                    >
+                     >
                       Doctor
-                    </option>
+                     </option>
                   </select>
                   <br></br>
                   <br></br>
@@ -255,12 +255,12 @@ class Admin extends Component {
                   ></input>
                   <br></br>
                   <br></br>
-                  <div className="label mt-2">Blockchain Address:</div>
+                  <div className="label mt-2">Public ID:</div>
                   <input
                     type="text"
                     className="py-1 px-1 rounded-full w-70"
                     id="adhaar_blockchain_id"
-                    placeholder="Blockchain Id"
+                    placeholder="Public Id"
                   ></input>
                   <br></br>
                   <br></br>

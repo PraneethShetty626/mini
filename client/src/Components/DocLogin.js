@@ -199,7 +199,7 @@ class DocLogin extends Component {
             <br></br>
             <br />
 
-            <button className="h-10 px-5 m-2 text-blue-300 transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700" onClick={this.checkDoc}>Login As Doctor</button>
+            <button className="h-10 px-5 m-2  transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700 text-white" onClick={this.checkDoc}>Login As Doctor</button>
           </form>
         </div>
       </div>;
@@ -207,8 +207,7 @@ class DocLogin extends Component {
     const patForm =
       <div>
         <div><h3 style={{ align: 'centre' }}>Patient</h3></div>
-        <button className="h-10 px-5 m-2 text-pink-100 transition-colors duration-150 bg-pink-600 rounded-full focus:shadow-outline hover:bg-pink-700" variant="dark" onClick={this.patientRegisterForm}>Register Patient</button>
-        <button className="h-10 px-5 m-2 text-blue-300 transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700" variant="dark" onClick={this.patientLoginForm}>Login</button>
+        <button className="h-10 px-5 m-2 text-white transition-colors duration-150 bg-pink-600 rounded-full focus:shadow-outline hover:bg-pink-700" variant="dark" onClick={this.patientRegisterForm}>Registration</button>
 
         {this.state.pat_reg_login === 0 ?
           <div>
@@ -243,7 +242,10 @@ class DocLogin extends Component {
               <br></br>
 
 
-              <button className="h-10 px-5 m-2 text-indigo-300 transition-colors duration-150 bg-indigo-600 rounded-full focus:shadow-outline hover:bg-indigo-700" variant="dark" type="submit">Register Patient</button>
+              <button className="h-10 px-5 m-2 text-white transition-colors duration-150 bg-indigo-600 rounded-full focus:shadow-outline hover:bg-indigo-700" variant="dark" type="submit">Register</button>
+                  <br></br>
+                  <a href=""><button onClick={this.patientLoginForm}> already registered?</button></a>
+              <button className="h-10 px-5 m-2 text-white transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700" variant="dark" onClick={this.patientLoginForm}>Login</button>
             </form>
             <br />
           </div>
@@ -255,7 +257,7 @@ class DocLogin extends Component {
             <input type="text" className="py-1 px-1 rounded-full border-2 border-indigo-600" name="adhaar_number" id="pat_adhaar_number" placeholder="Adhaar Number"></input>
             <br></br>
 
-            <button className="h-10 px-5 m-2 text-blue-300 transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700" variant="dark" onClick={this.checkPat.bind(this)}>Login As Patient</button>
+            <button className="h-10 px-5 m-2  transition-colors duration-150 bg-blue-600 rounded-full focus:shadow-outline hover:bg-blue-700 text-white" variant="dark" onClick={this.checkPat.bind(this)}>Login As Patient</button>
 
           </div>
         }
